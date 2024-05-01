@@ -21,7 +21,6 @@ a {
 .container {
   width: 1440px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 
 .container-padding {
@@ -44,7 +43,7 @@ a {
 }
 
 .hero {
-  padding: 128px 0;
+  padding: 128px 96px;
   width: 800px;
 }
 
@@ -76,13 +75,6 @@ a {
 
 .feature-works__list {
   position: relative;
-  /* display: grid;
-  grid-template-columns: 612px 612px;
-  justify-content: center;
-  grid-auto-rows: min-content;
-  align-items: start;
-  column-gap: 24px;
-  row-gap: 24px; */
 }
 
 .feature-works__item {
