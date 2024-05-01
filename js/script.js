@@ -77,9 +77,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const topButton = document.querySelector(".button__up");
 topButton.addEventListener("click", () => {
+  document.documentElement.style.scrollBehavior = "smooth";
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  document.documentElement.style.scrollBehavior = "smooth";
 });
 
 window.onscroll = () => {
