@@ -76,11 +76,12 @@ a {
 
 .feature-works-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  grid-auto-flow: row dense;
+  grid-template-columns: 612px 612px;
   justify-content: center;
-  align-items: center;
+  grid-auto-rows: min-content;
+  align-items: start;
+  column-gap: 24px;
+  row-gap: 24px;
 }
 
 .feature-works-list-item {
