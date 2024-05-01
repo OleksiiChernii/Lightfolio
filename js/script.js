@@ -65,12 +65,27 @@ class Mansonry {
 
 new Mansonry(document.getElementById("mansonry"), { gap: 24 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
+  });
 });
+
+const topButton = document.querySelector(".button__up");
+topButton.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.documentElement.style.scrollBehavior = "smooth";
+});
+
+window.onscroll = () => {
+  if (document.body.scrollTop > 76 || document.documentElement.scrollTop > 76) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+};

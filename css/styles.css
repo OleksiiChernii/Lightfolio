@@ -23,6 +23,27 @@ a {
   margin: 0 auto;
 }
 
+.button__up{
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+
+  cursor: pointer;
+
+  z-index: 99;
+  transition: background-color 1s ease-in;
+}
+
+.button__up:hover,
+.button__up:focus{
+  background-color: #dedede;
+}
+
 .container-padding {
   padding: 0 96px;
 }
