@@ -8,22 +8,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <button type="button" class="button__up">Up</button>
     <header class="container" id="home">
       <nav class="container-padding">
         <ul class="navigation">
-          <li class="navigation-link"><a href="#works">Work</a></li>
-          <li class="navigation-link"><a href="#about">About</a></li>
-          <li class="navigation-link"><a href="#contact">Contact</a></li>
+          <li class="navigation__link"><a href="#works">Work</a></li>
+          <li class="navigation__link"><a href="#about">About</a></li>
+          <li class="navigation__link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <section class="hero container-padding">
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           I’m Jonas — a senior product designer<br />
           <span>that cares a lot about positive impact projects</span>
         </h1>
@@ -125,24 +125,24 @@
       <section class="me">
         <img src="./images/me.png" alt="me" width="1440" />
       </section>
-      <section class="experience container-padding">
-        <h2>Experience</h2>
-        <ul class="experience-list">
-          <li>
+      <section class="experience">
+        <h2 class="experience__title">Experience</h2>
+        <ul class="experience__list">
+          <li class="experience__item">
             <div class="company">
               <p class="company__name">Company name</p>
               <p class="company__title">Job title</p>
             </div>
             <p>August 2021-today</p>
           </li>
-          <li>
+          <li class="experience__item">
             <div class="company">
               <p class="company__name">Company name</p>
               <p class="company__title">Job title</p>
             </div>
             <p>August 2021-today</p>
           </li>
-          <li>
+          <li class="experience__item">
             <div class="company">
               <p class="company__name">Company name</p>
               <p class="company__title">Job title</p>
@@ -151,8 +151,8 @@
           </li>
         </ul>
       </section>
-      <section class="services container-padding">
-        <div>
+      <section class="services">
+        <div class="services__container">
           <h2 class="services__title">Services</h2>
           <ul class="services__list">
             <li class="services__item">
@@ -172,7 +172,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="services__container">
           <h2 class="services__title">Selected clients</h2>
           <ul class="services__list">
             <li class="services__item">
@@ -193,27 +193,29 @@
           </ul>
         </div>
       </section>
-      <section class="contact-me container-padding" id="contact">
+      <section class="contact-me" id="contact">
         <div class="card">
-          <h2 class="card__title">Want to create something awesome? Drop me an email.</h2>
+          <h2 class="card__title">
+            Want to create something awesome? Drop me an email.
+          </h2>
           <a href="mailto:" class="card__email">Hi@email.com</a>
         </div>
       </section>
     </main>
-    <footer class="container container-padding">
+    <footer class="container">
       <section class="footer">
-      <ul class="refferences">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#works">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <ul class="refferences">
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">LinkedIn</a></li>
-      </ul>
-    </section>
+        <ul class="refferences">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="refferences">
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </section>
     </footer>
     <script src="./js/script.js"></script>
   </body>
