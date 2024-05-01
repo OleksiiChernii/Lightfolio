@@ -15,11 +15,12 @@ class Mansonry {
 
   drawMansonry() {
     const columns = [
-      this.childrenData.filter((e, i) => i % 2 === 0),
-      this.childrenData.filter((e, i) => i % 2 !== 0),
+      this.childrenData.filter((_, i) => i % 2 === 0),
+      this.childrenData.filter((_, i) => i % 2 !== 0),
     ];
 
-    const totalHeight = columns[0].reduce((acc, e) => acc + e.height, 0);
+    this.containerNode.style.height =
+      columns[0].reduce((acc, e) => acc + e.height, 0) + "px";
 
     const positions = [
       columns[0].map((_, i) => {
@@ -51,14 +52,14 @@ class Mansonry {
         ? positionsCombined.push(positions[0].shift())
         : positionsCombined.push(positions[1].shift());
     }
-    console.log(positionsCombined);
-    Array.from(this.childrenNodes).filter((e) => e.nodeName === "LI")
-    .forEach((e, i) => {
-        e.style.position = 'absolute';
+
+    Array.from(this.childrenNodes)
+      .filter((e) => e.nodeName === "LI")
+      .forEach((e, i) => {
+        e.style.position = "absolute";
         e.style.top = positionsCombined[i].top;
         e.style.left = positionsCombined[i].left;
-    });
-    this.containerNode.style.height = totalHeight + 'px';
+      });
   }
 }
 
