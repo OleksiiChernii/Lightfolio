@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="container" id="home">
       <nav class="container-padding">
         <ul class="navigation">
-          <li class="navigation-link"><a href="">Work</a></li>
-          <li class="navigation-link"><a href="">About</a></li>
-          <li class="navigation-link"><a href="">Contact</a></li>
+          <li class="navigation-link"><a href="#works">Work</a></li>
+          <li class="navigation-link"><a href="#about">About</a></li>
+          <li class="navigation-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -27,7 +27,7 @@
           <span>that cares a lot about positive impact projects</span>
         </h1>
       </section>
-      <section class="feature-works container-padding">
+      <section class="feature-works container-padding" id="works">
         <p class="feature-works-title">
           Feature works <span>· 2018–2022</span>
         </p>
@@ -92,7 +92,7 @@
           </li>
         </ul>
       </section>
-      <section class="about container-padding">
+      <section class="about container-padding" id="about">
         <h2>About me</h2>
         <ul class="about-list">
           <li>
@@ -128,72 +128,91 @@
         <h2>Experience</h2>
         <ul class="experience-list">
           <li>
-            <p class="company">Company name
-                <p>Job title</p>
-            </p>
+            <div class="company">
+              <p class="company__name">Company name</p>
+              <p class="company__title">Job title</p>
+            </div>
             <p>August 2021-today</p>
           </li>
           <li>
-            <p>Company name</p>
-            <p>Job title</p>
+            <div class="company">
+              <p class="company__name">Company name</p>
+              <p class="company__title">Job title</p>
+            </div>
             <p>August 2021-today</p>
           </li>
           <li>
-            <p>Company name</p>
-            <p>Job title</p>
+            <div class="company">
+              <p class="company__name">Company name</p>
+              <p class="company__title">Job title</p>
+            </div>
             <p>August 2021-today</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="services container-padding">
         <div>
-          <h2>Services</h2>
-          <ul>
-            <li>
+          <h2 class="services__title">Services</h2>
+          <ul class="services__list">
+            <li class="services__item">
               <p>Design systems</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Product design</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>UX design and research</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Design strategy</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Websites and mobile app design</p>
             </li>
           </ul>
         </div>
         <div>
-          <h2>Selected clients</h2>
-          <ul>
-            <li>
+          <h2 class="services__title">Selected clients</h2>
+          <ul class="services__list">
+            <li class="services__item">
               <p>Veja</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Polestar</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Allbirds</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Oatly</p>
             </li>
-            <li>
+            <li class="services__item">
               <p>Bang & Olufsen</p>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2></h2>
-          <a href="mailto:">Hi@email.com</a>
+      <section class="contact-me container-padding" id="contact">
+        <div class="card">
+          <h2 class="card__title">Want to create something awesome? Drop me an email.</h2>
+          <a href="mailto:" class="card__email">Hi@email.com</a>
         </div>
       </section>
     </main>
-    <footer class="container"></footer>
+    <footer class="container container-padding">
+      <section class="footer">
+      <ul class="refferences">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#works">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="refferences">
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">LinkedIn</a></li>
+      </ul>
+    </section>
+    </footer>
   </body>
 </html>
