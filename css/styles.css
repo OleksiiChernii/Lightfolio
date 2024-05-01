@@ -23,7 +23,7 @@ a {
   margin: 0 auto;
 }
 
-.button__up{
+.button__up {
   display: none;
   position: fixed;
   bottom: 50px;
@@ -36,12 +36,13 @@ a {
   cursor: pointer;
 
   z-index: 99;
-  transition: background-color 1s ease-in;
+  transition: background-color 1s ease-in, transform 1s ease-out;
 }
 
 .button__up:hover,
-.button__up:focus{
+.button__up:focus {
   background-color: #dedede;
+  transform: scale(1.2);
 }
 
 .container-padding {
@@ -104,6 +105,11 @@ a {
   background-color: #f7f7f7;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  transition: transform 0.5s linear;
+}
+
+.feature-works__item:hover {
+  transform: scale(1.05);
 }
 
 .item__text {
@@ -259,22 +265,22 @@ a {
   gap: 64px;
 }
 
-.card__title{
+.card__title {
   font-size: 57px;
   line-height: 1.3;
   text-align: center;
   width: 638px;
 }
 
-.card__email{
+.card__email {
   font-size: 37px;
   line-height: 1.3;
 }
 
-.footer{
+.footer {
   padding-top: 64px;
   padding-bottom: 64px;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -282,7 +288,7 @@ a {
   border-bottom: 1px solid #f0f0f0;
 }
 
-.refferences{
+.refferences {
   display: flex;
   align-items: center;
   justify-content: center;
